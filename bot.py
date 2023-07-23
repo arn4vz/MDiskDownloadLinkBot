@@ -21,7 +21,7 @@ app = Client("mdisk", bot_token=TG_BOT_TOKEN, api_hash=API_HASH, api_id=APP_ID)
 
 @app.on_message(filters.command(['start']))
 async def start(client, message):
-    await message.reply_text(text=f"Hello 👋\n\nSend me MDisk links to convert to Direct Download Link", reply_to_message_id=message.message_id)
+    await message.reply_text(text=f"Hello 👋\n\nSend me MDisk links to convert to Direct Download Link and dont forget to join our channel @hackerworld69", reply_to_message_id=message.message_id)
 
 
 @app.on_message(filters.private & filters.text)
